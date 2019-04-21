@@ -238,7 +238,7 @@ public class PersianDatePickerDialog {
                 updateView(dateText);
             }
         });
-        final AlertDialog dialog = null;
+        AlertDialog dialog = null;
         if(dialogStyle != -1){
               dialog = new AlertDialog.Builder(context , dialogStyle)
                 .setView(v)
