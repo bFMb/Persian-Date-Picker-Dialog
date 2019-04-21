@@ -46,7 +46,7 @@ public class PersianDatePickerDialog {
     private boolean forceMode;
     private int pickerBackgroundColor;
     private int pickerBackgroundDrawable;
-    private int customStyle = -1;
+    private int dialogStyle = -1;
 
     public PersianDatePickerDialog(Context context) {
         this.context = context;
@@ -155,7 +155,7 @@ public class PersianDatePickerDialog {
     }
     
       public PersianDatePickerDialog setStyle(int style) {
-        this.customStyle = style;
+        this.dialogStyle = style;
         return this;
     }
 
@@ -239,7 +239,7 @@ public class PersianDatePickerDialog {
             }
         });
 
-        if(customStyle =! -1){
+        if(customStyle != -1){
              final AlertDialog dialog = new AlertDialog.Builder(context , customStyle)
                 .setView(v)
                 .setCancelable(cancelable)
