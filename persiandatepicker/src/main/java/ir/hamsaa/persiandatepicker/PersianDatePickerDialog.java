@@ -238,14 +238,14 @@ public class PersianDatePickerDialog {
                 updateView(dateText);
             }
         });
-
-        if(customStyle != -1){
-             final AlertDialog dialog = new AlertDialog.Builder(context , customStyle)
+        final AlertDialog dialog = null;
+        if(dialogStyle != -1){
+              dialog = new AlertDialog.Builder(context , dialogStyle)
                 .setView(v)
                 .setCancelable(cancelable)
                 .create();
         }else{
-             final AlertDialog dialog = new AlertDialog.Builder(context)
+              dialog = new AlertDialog.Builder(context)
                 .setView(v)
                 .setCancelable(cancelable)
                 .create();
