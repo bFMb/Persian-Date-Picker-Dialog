@@ -4,10 +4,10 @@ package ir.hamsaa;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import ir.hamsaa.persiandatepicker.Listener;
 import ir.hamsaa.persiandatepicker.PersianDatePickerDialog;
 import ir.hamsaa.persiandatepicker.util.PersianCalendar;
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 .setInitDate(initDate)
                 .setActionTextColor(Color.GRAY)
                 .setTypeFace(typeface)
+                .setStyle(R.style.CustomDialog)
                 .setListener(new Listener() {
                     @Override
                     public void onDateSelected(PersianCalendar persianCalendar) {
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 .setBackgroundColor(Color.BLACK)
                 .setTitleColor(Color.WHITE)
                 .setActionTextColor(Color.WHITE)
-                .setPickerBackgroundDrawable(R.drawable.darkmode_bg)
+                .setPickerBackgroundDrawable(R.drawable.touchable_background)
                 .setCancelable(false)
                 .setListener(new Listener() {
                     @Override

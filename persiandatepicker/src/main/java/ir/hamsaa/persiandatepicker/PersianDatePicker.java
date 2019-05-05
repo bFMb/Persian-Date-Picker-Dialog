@@ -7,8 +7,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +16,8 @@ import android.widget.TextView;
 
 import java.util.Date;
 
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
 import ir.hamsaa.persiandatepicker.util.PersianCalendar;
 import ir.hamsaa.persiandatepicker.util.PersianCalendarConstants;
 import ir.hamsaa.persiandatepicker.util.PersianCalendarUtils;
